@@ -18,6 +18,9 @@ const HomeScreen: () => React$Node = (props) => {
         <View style={{marginTop:50}}>
             <Button title="File Test" onPress={()=>props.navigation.navigate("File")}/>
         </View>
+        <View style={{marginTop:50}}>
+            <Button title="Font Test" onPress={()=>props.navigation.navigate("Font")}/>
+        </View>
     </SafeAreaView>
   );
 };

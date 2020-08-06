@@ -23,6 +23,7 @@ import ToastScreen from './src/screen/Toast'
 import { RootSiblingParent } from 'react-native-root-siblings';
 import ToastComponent from './src/component/Toast'
 import ReadFileScreen from './src/screen/ReadFile'
+import FontScreen from './src/screen/Font'
 
 
 
@@ -57,6 +58,7 @@ const App: () => React$Node = () => {
             <Stack.Screen name="Spinner" component={SpinnerScreen} />
             <Stack.Screen name="Toast" component={ToastScreen} />
             <Stack.Screen name="File" component={ReadFileScreen} />
+            <Stack.Screen name="Font" component={FontScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>
