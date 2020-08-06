@@ -23,3 +23,16 @@ react-native-root-toast
 
 - 특이사항
   - android 에 font디렉토리 없을 경우 **react-native link** 입력해보기
+
+## Global StyleSheet
+- 선언  
+  - **src/common/globalStyle.js** 처럼 react-native의 StyleSheet를 import 하여 StyleSheet를 생성 및 css를 작성햐여 export한다.
+
+- 사용
+  - Font.js 참고  
+  ``` 
+    let globalStyle = require('../common/globalStyle'); 
+  ```
+  ```
+    <Text style={[globalStyle.textRed,{fontSize:40,fontFamily:"CAVEAT"}]}>Global StyleSheet and Font</Text>
+  ```
