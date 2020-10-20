@@ -21,6 +21,9 @@ const HomeScreen: () => React$Node = (props) => {
         <View style={{marginTop:50}}>
             <Button title="Font Test" onPress={()=>props.navigation.navigate("Font")}/>
         </View>
+        <View style={{marginTop:50}}>
+            <Button title="Accordion Test" onPress={()=>props.navigation.navigate("Accordion")}/>
+        </View>
     </SafeAreaView>
   );
 };
