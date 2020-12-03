@@ -29,7 +29,8 @@
     "react-native-vector-icons": "^7.0.0",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "rn-range-slider": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "7.10.5",
@@ -44,8 +45,8 @@
   "jest": {
     "preset": "react-native"
   },
-  "rnpm" :{
-    "assets" :[
+  "rnpm": {
+    "assets": [
       "./assets/fonts"
     ]
   }

@@ -25,7 +25,7 @@ import ToastComponent from './src/component/Toast'
 import ReadFileScreen from './src/screen/ReadFile'
 import FontScreen from './src/screen/Font'
 import Accordion from './src/screen/Accordion'
-
+import Slider from './src/screen/Slider'
 
 
 const Stack = createStackNavigator();
@@ -43,7 +43,7 @@ const SpinnerComponent = () =>{
 }
 
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <RootSiblingParent>
       <Provider store={store}>
@@ -61,6 +61,7 @@ const App: () => React$Node = () => {
             <Stack.Screen name="File" component={ReadFileScreen} />
             <Stack.Screen name="Font" component={FontScreen} />
             <Stack.Screen name="Accordion" component={Accordion} />
+            <Stack.Screen name="Slider" component={Slider} />
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>
