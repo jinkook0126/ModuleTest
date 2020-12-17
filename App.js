@@ -26,6 +26,7 @@ import ReadFileScreen from './src/screen/ReadFile'
 import FontScreen from './src/screen/Font'
 import Accordion from './src/screen/Accordion'
 import Slider from './src/screen/Slider'
+import Brightness from './src/screen/Brightness'
 
 
 const Stack = createStackNavigator();
@@ -62,6 +63,7 @@ const App = () => {
             <Stack.Screen name="Font" component={FontScreen} />
             <Stack.Screen name="Accordion" component={Accordion} />
             <Stack.Screen name="Slider" component={Slider} />
+            <Stack.Screen name="Brightness" component={Brightness} />
           </Stack.Navigator>
         </NavigationContainer>
       </Provider>

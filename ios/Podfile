@@ -8,6 +8,8 @@ target 'ModuleTest' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-device-brightness', :path => '../node_modules/@adrianso/react-native-device-brightness'
+
   target 'ModuleTestTests' do
     inherit! :complete
     # Pods for testing

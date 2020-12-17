@@ -1,3 +1,5 @@
 rootProject.name = 'ModuleTest'
+include ':@adrianso_react-native-device-brightness'
+project(':@adrianso_react-native-device-brightness').projectDir = new File(rootProject.projectDir, '../node_modules/@adrianso/react-native-device-brightness/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
