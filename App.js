@@ -42,7 +42,14 @@ const SpinnerComponent = () =>{
     />
   )
 }
-
+const linking = {
+  prefixes: ["mileversern://"],
+  config: {
+      screens: {
+        Font: "font",
+      },
+  },
+};
 
 const App = () => {
   return (
@@ -50,7 +57,7 @@ const App = () => {
       <Provider store={store}>
         <SpinnerComponent />
         <ToastComponent />
-        <NavigationContainer>
+        <NavigationContainer linking={linking}>
           <Stack.Navigator>
             <Stack.Screen
               name="Home"
