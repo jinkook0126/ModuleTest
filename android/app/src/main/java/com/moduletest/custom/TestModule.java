@@ -1,5 +1,6 @@
 package com.moduletest.custom;
 
+import android.content.Intent;
 import android.provider.Settings;
 import android.widget.Toast;
 
@@ -9,6 +10,7 @@ import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.moduletest.CustomActivity;
 
 public class TestModule extends ReactContextBaseJavaModule {
     private static ReactApplicationContext reactContext;
@@ -33,8 +35,13 @@ public class TestModule extends ReactContextBaseJavaModule {
         }
     }
 
-    public void NavigateToNative() {
-
+    @ReactMethod
+    public void NavigateToIntent() {
+        Intent intent = new Intent(reactContext, CustomActivity.class);
+        if (intent.resolveActivity(reactContext.getPackageManager()) != null) {
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            reactContext.startActivity(intent);
+        }
     }
 
     @NonNull

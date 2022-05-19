@@ -15,7 +15,7 @@ export default () => {
   }, []);
 
   const navigateActivity = useCallback(() => {
-    Alert.alert('알림', 'zz');
+    NativeModules.Custom.NavigateToIntent();
   }, []);
 
   return (
